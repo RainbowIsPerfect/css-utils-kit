@@ -1,0 +1,111 @@
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes translate-top {
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes translate-bottom {
+  to {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes translate-right {
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes translate-left {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scale-up {
+  from {
+    transform: scale(0);
+  }
+}
+
+@keyframes scale-down {
+  to {
+    transform: scale(0);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes shake-x {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-10%);
+  }
+  40% {
+    transform: translateX(10%);
+  }
+  60% {
+    transform: translateX(-10%);
+  }
+  80% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes shake-y {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-10%);
+  }
+  40% {
+    transform: translateY(10%);
+  }
+  60% {
+    transform: translateY(-10%);
+  }
+  80% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes blur {
+  to {
+    filter: blur(3px);
+  }
+}
