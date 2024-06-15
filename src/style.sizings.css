@@ -1,0 +1,37 @@
+:root {
+  /* *Calculation based on 16px font-size */
+  --size-1: 0.125rem; /* 2px* */
+  --size-2: 0.25rem; /* 4px* */
+  --size-3: 0.5rem; /* 8px* */
+  --size-4: 0.75rem; /* 12px* */
+  --size-5: 1rem; /* 16px* */
+  --size-6: 1.25rem; /* 20px* */
+  --size-7: 1.5rem; /* 24px* */
+  --size-8: 1.75rem; /* 28px* */
+  --size-9: 2rem; /* 32px* */
+  --size-10: 2.5rem; /* 40px* */
+  --size-11: 3rem; /* 48px* */
+  --size-12: 4rem; /* 64px* */
+  --size-13: 5rem; /* 80px* */
+  --size-14: 6rem; /* 96px* */
+  --size-15: 7rem; /* 112px* */
+  --size-16: 8rem; /* 128px* */
+  --size-17: 9rem; /* 144px* */
+  --size-18: 10rem; /* 160px* */
+  --size-19: 12rem; /* 192px* */
+  --size-20: 14rem; /* 224px* */
+  --size-21: 16rem; /* 256px* */
+  --size-22: 18rem; /* 288px* */
+  --size-23: 20rem; /* 320px* */
+  --size-24: 22rem; /* 352px* */
+  --size-25: 24rem; /* 384px* */
+  --size-26: 26rem; /* 416px* */
+  --size-27: 28rem; /* 448px* */
+  --size-28: 32rem; /* 512px* */
+  --size-29: 40rem; /* 640px* */
+  --size-30: 48rem; /* 768px* */
+  --size-31: 62rem; /* 992px* */
+  --size-32: 68rem; /* 1088px* */
+  --size-33: 75rem; /* 1200px* */
+  --size-34: 80rem; /* 1280px* */
+}
