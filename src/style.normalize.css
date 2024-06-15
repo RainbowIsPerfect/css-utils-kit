@@ -43,7 +43,3 @@
 :where(a, button:not(:disabled)) {
   cursor: pointer;
 }
-
-html {
-  color: red;
-}
