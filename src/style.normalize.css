@@ -1,0 +1,49 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:where(body) {
+  line-height: 1.5;
+}
+
+:where(img, picture, video, svg) {
+  display: block;
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+:where(button, input, select, textarea, optgroup),
+:where(input[type="file"])::file-selector-button {
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+}
+
+:where(textarea) {
+  resize: block;
+}
+
+:where(ol[role="list"], ul[role="list"]) {
+  list-style: none;
+}
+
+:where(a, a:any-link) {
+  text-decoration: none;
+}
+
+:where(a, button:not(:disabled)) {
+  cursor: pointer;
+}
+
+html {
+  color: red;
+}
