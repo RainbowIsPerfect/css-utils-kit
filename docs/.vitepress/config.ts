@@ -10,6 +10,15 @@ const paths = Object.keys(styles).map((key) => ({
 export default defineConfig({
   title: "CSS Utils Kit",
   description: "A VitePress Site",
+  head: [
+    [
+      "link",
+      {
+        rel: "icon",
+        href: "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💫</text></svg>",
+      },
+    ],
+  ],
   transformPageData(pageData) {
     if (pageData?.params?.page) {
       pageData.title = pageData.params.page;
