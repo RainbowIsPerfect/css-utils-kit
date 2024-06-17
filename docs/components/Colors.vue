@@ -1,7 +1,7 @@
 <script setup lang="ts">
-defineProps<{ colors: any[] }>();
-
-const fn = (data) => window.navigator.clipboard.writeText(data);
+import { colors } from "../../src/style.colors";
+import { useClipboard } from "@vueuse/core";
+const { copy } = useClipboard();
 </script>
 
 <template>
@@ -12,7 +12,7 @@ const fn = (data) => window.navigator.clipboard.writeText(data);
       style="display: flex; gap: 5px; margin-bottom: 5px"
     >
       <div
-        v-for="(tone, name) in color"
+        v-for="tone in color"
         :style="{
           'background-color': tone,
           width: '1.5rem',
@@ -20,7 +20,7 @@ const fn = (data) => window.navigator.clipboard.writeText(data);
           cursor: 'pointer',
           'border-radius': '5px',
         }"
-        @click="() => fn(tone)"
+        @click="copy(tone)"
       ></div>
     </div>
   </div>

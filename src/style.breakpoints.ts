@@ -7,5 +7,3 @@ export const breakpoints = {
   "--breakpoint-2xl": "90em",
   "--breakpoint-3xl": "120em",
 };
-
-export default breakpoints;

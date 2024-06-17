@@ -1,4 +1,4 @@
-export const pink = {
+const pink = {
   "--pink-0": "#f8def0",
   "--pink-5": "#f7d6ed",
   "--pink-10": "#f7cfeb",
@@ -22,7 +22,7 @@ export const pink = {
   "--pink-100": "#c20385",
 };
 
-export const dark = {
+const dark = {
   "--dark-0": "#444546",
   "--dark-5": "#3f4041",
   "--dark-10": "#393a3b",
@@ -46,7 +46,7 @@ export const dark = {
   "--dark-100": "#030303",
 };
 
-export const mint = {
+const mint = {
   "--mint-0": "#d3faf7",
   "--mint-5": "#c7f7f3",
   "--mint-10": "#bbf5f0",
@@ -70,7 +70,7 @@ export const mint = {
   "--mint-100": "#04b3a4",
 };
 
-export const purple = {
+const purple = {
   "--purple-0": "#ddc8fa",
   "--purple-5": "#d6bcf8",
   "--purple-10": "#ccadf5",
@@ -94,7 +94,7 @@ export const purple = {
   "--purple-100": "#33066e",
 };
 
-export const autumn = {
+const autumn = {
   "--autumn-0": "#fddcc6",
   "--autumn-5": "#fcd6bc",
   "--autumn-10": "#f8caac",
@@ -118,7 +118,7 @@ export const autumn = {
   "--autumn-100": "#974007",
 };
 
-export const gold = {
+const gold = {
   "--gold-0": "#f9fab7",
   "--gold-5": "#f8faa3",
   "--gold-10": "#f5f791",
@@ -142,7 +142,7 @@ export const gold = {
   "--gold-100": "#727404",
 };
 
-export const forest = {
+const forest = {
   "--forest-0": "#ccfce6",
   "--forest-5": "#bdf7dd",
   "--forest-10": "#aef0d2",
@@ -166,7 +166,7 @@ export const forest = {
   "--forest-100": "rgb(16, 88, 55)",
 };
 
-export const red = {
+const red = {
   "--red-0": "rgb(247, 219, 219)",
   "--red-5": "rgb(247, 211, 211)",
   "--red-10": "rgb(252, 201, 201)",
@@ -190,7 +190,7 @@ export const red = {
   "--red-100": "rgb(97, 12, 12)",
 };
 
-export const ocean = {
+const ocean = {
   "--ocean-0": "rgb(77, 128, 255)",
   "--ocean-5": "rgb(69, 120, 248)",
   "--ocean-10": "rgb(60, 112, 245)",
@@ -214,7 +214,7 @@ export const ocean = {
   "--ocean-100": "rgb(2, 14, 41)",
 };
 
-export const gray = {
+const gray = {
   "--gray-0": "rgb(231, 231, 231)",
   "--gray-5": "rgb(223, 223, 223)",
   "--gray-10": "rgb(213, 213, 213)",
@@ -238,7 +238,7 @@ export const gray = {
   "--gray-100": "rgb(44, 44, 42)",
 };
 
-export const violet = {
+const violet = {
   "--violet-0": "rgb(219, 209, 247)",
   "--violet-5": "rgb(210, 196, 247)",
   "--violet-10": "rgb(198, 180, 247)",
@@ -262,7 +262,7 @@ export const violet = {
   "--violet-100": "rgb(46, 11, 145)",
 };
 
-export const steel = {
+const steel = {
   "--steel-0": "rgb(226, 231, 238)",
   "--steel-5": "rgb(212, 219, 230)",
   "--steel-10": "rgb(204, 212, 223)",
@@ -286,7 +286,7 @@ export const steel = {
   "--steel-100": "rgb(36, 40, 44)",
 };
 
-export const ice = {
+const ice = {
   "--ice-0": "rgb(209, 225, 245)",
   "--ice-5": "rgb(200, 220, 247)",
   "--ice-10": "rgb(190, 213, 243)",
@@ -310,7 +310,7 @@ export const ice = {
   "--ice-100": "rgb(25, 45, 71)",
 };
 
-export const blue = {
+const blue = {
   "--blue-0": "rgb(204, 221, 248)",
   "--blue-5": "rgb(189, 210, 243)",
   "--blue-10": "rgb(171, 197, 240)",
@@ -334,7 +334,7 @@ export const blue = {
   "--blue-100": "rgb(2, 50, 116)",
 };
 
-export const sky = {
+const sky = {
   "--sky-0": "rgb(169, 207, 230)",
   "--sky-5": "rgb(157, 195, 219)",
   "--sky-10": "rgb(149, 188, 212)",
@@ -358,7 +358,7 @@ export const sky = {
   "--sky-100": "rgb(4, 71, 110)",
 };
 
-export const slate = {
+const slate = {
   "--slate-0": "rgb(147, 184, 209)",
   "--slate-5": "rgb(140, 177, 201)",
   "--slate-10": "rgb(134, 170, 192)",
@@ -382,7 +382,7 @@ export const slate = {
   "--slate-100": "rgb(27, 37, 41)",
 };
 
-export default {
+export const colors = {
   dark,
   gray,
   steel,

@@ -1,0 +1,26 @@
+[
+  {
+    "params": {
+      "description": "borders",
+      "page": "borders",
+      "feature": "Borders",
+      "usage": "border: var(--border-width-1) solid var(--var-slate-50);\nborder-radius: var(--border-radius-1);"
+    }
+  },
+  {
+    "params": {
+      "description": "breakpoints",
+      "page": "breakpoints",
+      "feature": "Breakpoints",
+      "usage": "@media (min-width: var(--breakpoint-2)) {\n\t/* */\n}"
+    }
+  },
+  {
+    "params": {
+      "description": "List of colors",
+      "page": "colors",
+      "feature": "Colors",
+      "usage": "color: var(--pink-5);\nbackground-color: var(--sky-70);"
+    }
+  }
+]

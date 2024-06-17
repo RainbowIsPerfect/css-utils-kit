@@ -1,21 +1,11 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from "vue";
+import { useMediaQuery } from "@vueuse/core";
 const props = defineProps<{ breakpoint: string; name: string }>();
-const media = window.matchMedia(`(min-width: ${props.breakpoint})`);
-const isMatched = ref(media.matches);
-const fn = () => (isMatched.value = media.matches);
-
-onMounted(() => {
-  media.addEventListener("change", fn);
-});
-
-onUnmounted(() => {
-  media.removeEventListener("change", fn);
-});
+const isMatch = useMediaQuery(`(min-width: ${props.breakpoint})`);
 </script>
 
 <template>
-  <div :style="{ color: isMatched ? 'green' : 'red' }">
+  <div :style="{ color: isMatch ? 'green' : 'red' }">
     {{ name + ": " + breakpoint }}
   </div>
 </template>

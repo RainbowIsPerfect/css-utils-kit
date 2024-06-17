@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import BreakpointInner from "./BreakpointInner.vue";
-defineProps<{ breakpoints: Record<string, string> }>();
+import { breakpoints } from "../../src/style.breakpoints";
 </script>
 
 <template>

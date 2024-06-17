@@ -1,4 +1,4 @@
-export const borderWidth = {
+const borderWidth = {
   "--border-width-1": "1px",
   "--border-width-2": "2px",
   "--border-width-3": "4px",
@@ -7,7 +7,7 @@ export const borderWidth = {
   "--border-width-6": "10px",
 };
 
-export const borderRadius = {
+const borderRadius = {
   "--border-radius-1": "0.125rem",
   "--border-radius-2": "0.25rem",
   "--border-radius-3": "0.375rem",
@@ -20,7 +20,7 @@ export const borderRadius = {
   "--border-radius-rounded": "50%",
 };
 
-export default {
+export const borders = {
   borderWidth,
   borderRadius,
 };
