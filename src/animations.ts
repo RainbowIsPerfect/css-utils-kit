@@ -1,0 +1,15 @@
+export const animations = [
+  "fade-in",
+  "fade-out",
+  "translate-top",
+  "translate-bottom",
+  "translate-right",
+  "translate-left",
+  "scale-up",
+  "scale-down",
+  "spin",
+  "blink",
+  "shake-x",
+  "shake-y",
+  "blur",
+];

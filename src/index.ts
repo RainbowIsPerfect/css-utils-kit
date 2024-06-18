@@ -1,12 +1,18 @@
-import { borders } from "./style.borders";
-// import { fontSizes, fontWeigh, lineHeight, letterSpacing } from "./style.fonts";
-import { breakpoints } from "./style.breakpoints";
-import { colors } from "./style.colors";
-// import { sizings } from "./style.sizings";
-// import { animations } from "./style.animations";
+import { borderRadius, borderWidth } from "./borders";
+import * as fonts from "./fonts";
+import { breakpoints } from "./breakpoints";
+import { colors } from "./colors";
+import { sizings } from "./sizings";
+import { animations } from "./animations";
 
 export const styles = {
-  borders,
+  animations,
+  borders: {
+    borderRadius,
+    borderWidth,
+  },
   breakpoints,
   colors,
+  fonts,
+  sizings,
 };

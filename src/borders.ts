@@ -1,4 +1,4 @@
-const borderWidth = {
+export const borderWidth = {
   "--border-width-1": "1px",
   "--border-width-2": "2px",
   "--border-width-3": "4px",
@@ -7,7 +7,7 @@ const borderWidth = {
   "--border-width-6": "10px",
 };
 
-const borderRadius = {
+export const borderRadius = {
   "--border-radius-1": "0.125rem",
   "--border-radius-2": "0.25rem",
   "--border-radius-3": "0.375rem",
@@ -18,9 +18,4 @@ const borderRadius = {
   "--border-radius-8": "1.5rem",
   "--border-radius-9": "2rem",
   "--border-radius-rounded": "50%",
-};
-
-export const borders = {
-  borderWidth,
-  borderRadius,
 };

@@ -3,21 +3,21 @@ export const fontSizes = {
   "--text-size-5": "0.625rem",
   "--text-size-10": "0.75rem",
   "--text-size-15": "0.875rem",
-  "--text-size-20": "1rem;",
+  "--text-size-20": "1rem",
   "--text-size-25": "1.125rem",
   "--text-size-30": "1.25rem",
   "--text-size-35": "1.5rem",
   "--text-size-40": "1.75rem",
-  "--text-size-45": "2rem;",
+  "--text-size-45": "2rem",
   "--text-size-50": "2.25rem",
   "--text-size-55": "2.5rem",
-  "--text-size-60": "3rem;",
+  "--text-size-60": "3rem",
   "--text-size-65": "3.5rem",
   "--text-size-70": "3.75rem",
-  "--text-size-75": "4rem;",
+  "--text-size-75": "4rem",
   "--text-size-85": "4.5rem",
-  "--text-size-90": "5rem;",
-  "--text-size-90": "6rem;",
+  "--text-size-90": "5rem",
+  "--text-size-95": "6rem",
 };
 
 export const fontWeigh = {
@@ -52,11 +52,4 @@ export const letterSpacing = {
   "--text-spacing-6": "0.075em",
   "--text-spacing-7": "0.1em",
   "--text-spacing-8": "0.2em",
-};
-
-export default {
-  fontSizes,
-  fontWeigh,
-  lineHeight,
-  letterSpacing,
 };

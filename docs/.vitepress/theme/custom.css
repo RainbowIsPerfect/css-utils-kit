@@ -1,0 +1,7 @@
+@import "../../../src/animations.css";
+
+.app-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}

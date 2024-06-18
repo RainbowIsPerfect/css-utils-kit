@@ -12,7 +12,7 @@
       "description": "breakpoints",
       "page": "breakpoints",
       "feature": "Breakpoints",
-      "usage": "@media (min-width: var(--breakpoint-2)) {\n\t/* */\n}"
+      "usage": "@media (min-width: var(--breakpoint-lg)) {\n\t/* */\n}"
     }
   },
   {
@@ -21,6 +21,30 @@
       "page": "colors",
       "feature": "Colors",
       "usage": "color: var(--pink-5);\nbackground-color: var(--sky-70);"
+    }
+  },
+  {
+    "params": {
+      "description": "List of animations",
+      "page": "animations",
+      "feature": "Animations",
+      "usage": "animation: var(--animation-1) 0.5s infinity;"
+    }
+  },
+  {
+    "params": {
+      "description": "List of font related properties",
+      "page": "fonts",
+      "feature": "Fonts",
+      "usage": "font-size: var(--text-size-30);"
+    }
+  },
+  {
+    "params": {
+      "description": "List of sizings",
+      "page": "sizings",
+      "feature": "Sizings",
+      "usage": "max-width: var(--size-5);"
     }
   }
 ]

@@ -5,9 +5,19 @@ const isMatch = useMediaQuery(`(min-width: ${props.breakpoint})`);
 </script>
 
 <template>
-  <div :style="{ color: isMatch ? 'green' : 'red' }">
+  <button
+    :style="{ color: isMatch ? 'green' : 'red' }"
+    class="example"
+  >
     {{ name + ": " + breakpoint }}
-  </div>
+  </button>
 </template>
 
-<style scoped></style>
+<style scoped>
+.example {
+  border: 2px solid var(--vp-c-default-1);
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+}
+</style>

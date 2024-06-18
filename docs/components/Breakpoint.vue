@@ -1,20 +1,28 @@
 <script setup lang="ts">
 import BreakpointInner from "./BreakpointInner.vue";
-import { breakpoints } from "../../src/style.breakpoints";
+import { breakpoints } from "../../src/breakpoints";
+import { useWindowSize, useClipboard } from "@vueuse/core";
+
+const { width } = useWindowSize();
+const { copy } = useClipboard();
 </script>
 
 <template>
-  <div>
-    <div
+  <div class="container">
+    <p>Window width: {{ width }}</p>
+    <BreakpointInner
       v-for="(breakpoint, name) in breakpoints"
-      style="display: flex; gap: 5px; margin-bottom: 5px"
-    >
-      <BreakpointInner
-        :breakpoint
-        :name
-      />
-    </div>
+      :breakpoint
+      :name
+      @click="copy(name)"
+    />
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+</style>
