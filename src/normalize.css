@@ -21,7 +21,7 @@
   font-weight: inherit;
 }
 
-:where(button, input, select, textarea, optgroup),
+:where(button, input, select, textarea),
 :where(input[type="file"])::file-selector-button {
   font: inherit;
   color: inherit;
@@ -36,10 +36,23 @@
   list-style: none;
 }
 
-:where(a, a:any-link) {
+:where(a:any-link) {
   text-decoration: none;
 }
 
-:where(a, button:not(:disabled)) {
+:where(
+    a[href],
+    summary,
+    label[for],
+    button:enabled,
+    select:enabled,
+    input:enabled:is([type="submit"], [type="reset"], [type="button"])
+  ) {
   cursor: pointer;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :has(:target) {
+    scroll-behavior: smooth;
+  }
 }
