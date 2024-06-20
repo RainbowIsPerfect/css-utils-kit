@@ -43,16 +43,19 @@
 :where(
     a[href],
     summary,
-    label[for],
-    button:enabled,
-    select:enabled,
-    input:enabled:is([type="submit"], [type="reset"], [type="button"])
+    label,
+    :is(
+        button,
+        select,
+        input:is([type="submit"], [type="reset"], [type="button"])
+      ):enabled,
+
   ) {
   cursor: pointer;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  :has(:target) {
+  :where(:has(:target)) {
     scroll-behavior: smooth;
   }
 }

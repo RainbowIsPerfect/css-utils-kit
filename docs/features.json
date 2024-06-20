@@ -28,7 +28,7 @@
       "description": "List of animations",
       "page": "animations",
       "feature": "Animations",
-      "usage": "animation: var(--animation-1) 0.5s infinity;"
+      "usage": "animation: fade-in 0.5s infinity;"
     }
   },
   {
