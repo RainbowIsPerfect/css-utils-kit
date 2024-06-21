@@ -40,6 +40,12 @@
   text-decoration: none;
 }
 
+:where(button, input:is([type="submit"], [type="reset"], [type="button"])) {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
 :where(
     a[href],
     summary,
