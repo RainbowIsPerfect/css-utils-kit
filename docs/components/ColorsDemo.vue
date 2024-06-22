@@ -1,6 +1,8 @@
 <script setup lang="ts">
-import { colors } from "../../src/colors";
 import { useClipboard } from "@vueuse/core";
+import { data } from "../styles.data";
+const colors = data.colors;
+
 const { copy } = useClipboard();
 </script>
 
@@ -12,12 +14,12 @@ const { copy } = useClipboard();
     <p>{{ name }}</p>
     <div class="container">
       <button
-        v-for="tone in color"
+        v-for="{ value } in color"
         :style="{
-          'background-color': tone,
+          'background-color': value,
         }"
         class="color"
-        @click="copy(tone)"
+        @click="copy(value)"
       ></button>
     </div>
   </div>

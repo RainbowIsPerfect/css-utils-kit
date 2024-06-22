@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import { animations } from "../../src/animations";
+import { data } from "../styles.data";
+const animations = data.animations;
 
 const currentAnimation = ref(animations[0]);
 </script>

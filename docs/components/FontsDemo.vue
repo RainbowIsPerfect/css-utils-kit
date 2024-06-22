@@ -1,11 +1,7 @@
 <script setup lang="ts">
-import {
-  fontSizes,
-  fontWeigh,
-  letterSpacing,
-  lineHeight,
-} from "../../src/fonts";
 import { useClipboard } from "@vueuse/core";
+import { data } from "../styles.data";
+const fonts = data.fonts;
 
 const { copy } = useClipboard();
 </script>
@@ -15,8 +11,8 @@ const { copy } = useClipboard();
     <h2>Font sizes</h2>
     <div>
       <button
-        v-for="(size, name) in fontSizes"
-        :style="{ 'font-size': size, lineHeight: size }"
+        v-for="{value, name} in fonts['text-size']"
+        :style="{ 'font-size': value, lineHeight: value }"
         class="example-size"
         @click="copy(name)"
       >
@@ -26,8 +22,8 @@ const { copy } = useClipboard();
 
     <h2>Font weights</h2>
     <button
-      v-for="(weight, name) in fontWeigh"
-      :style="{ 'font-weight': weight }"
+      v-for="{value, name} in fonts['text-weight']"
+      :style="{ 'font-weight': value }"
       class="example-size"
       @click="copy(name)"
     >
@@ -36,8 +32,8 @@ const { copy } = useClipboard();
 
     <h2>Line heights</h2>
     <button
-      v-for="(height, name) in lineHeight"
-      :style="{ 'line-height': height }"
+      v-for="{value, name} in fonts['text-height']"
+      :style="{ 'line-height': value }"
       class="example-size"
       @click="copy(name)"
     >
@@ -46,8 +42,8 @@ const { copy } = useClipboard();
 
     <h2>Letter spacings</h2>
     <button
-      v-for="(spacing, name) in letterSpacing"
-      :style="{ 'letter-spacing': spacing }"
+      v-for="{value, name} in fonts['text-spacing']"
+      :style="{ 'letter-spacing': value }"
       class="example-size"
       @click="copy(name)"
     >

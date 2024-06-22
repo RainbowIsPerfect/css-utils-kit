@@ -4,19 +4,20 @@ outline: deep
 
 <script setup>
 import AnimationsDemo from  "./components/AnimationsDemo.vue"
-import Breakpoint from "/components/Breakpoint.vue"
-import Borders from  "./components/Borders.vue"
-import Colors from  "./components/Colors.vue"
+import BreakpointsDemo from "/components/BreakpointsDemo.vue"
+import BordersDemo from  "./components/BordersDemo.vue"
+import ColorsDemo from  "./components/ColorsDemo.vue"
 import FontsDemo from "./components/FontsDemo.vue"
 import SizingsDemo from "./components/SizingsDemo.vue"
 import { useData } from "vitepress"
 const { params } = useData();
 
+
 const component = {
   animations: AnimationsDemo,
-  breakpoints: Breakpoint,
-  borders: Borders,
-  colors: Colors,
+  breakpoints: BreakpointsDemo,
+  borders: BordersDemo,
+  colors: ColorsDemo,
   fonts: FontsDemo,
   sizings: SizingsDemo,
 }[params.value.page];

@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { borderRadius, borderWidth } from "../../src/borders";
 import { useClipboard } from "@vueuse/core";
+import { data } from "../styles.data";
+const borders = data.borders;
 
 const { copy } = useClipboard();
 </script>
@@ -10,9 +11,9 @@ const { copy } = useClipboard();
     <h2>Border Width</h2>
     <div class="app-container">
       <button
-        v-for="(width, name) in borderWidth"
+        v-for="{name, value} in borders['border-width']"
         :style="{
-          'border-width': width,
+          'border-width': value,
         }"
         class="example"
         @click="copy(name)"
@@ -23,9 +24,9 @@ const { copy } = useClipboard();
     <h2>Border Radius</h2>
     <div class="app-container">
       <button
-        v-for="(r, name) in borderRadius"
+        v-for="{name, value} in borders['border-radius']"
         :style="{
-          'border-radius': r,
+          'border-radius': value,
         }"
         class="example"
         @click="copy(name)"

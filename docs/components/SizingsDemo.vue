@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { useElementSize } from "@vueuse/core";
-import { sizings } from "../../src/sizings";
+import { data } from "../styles.data";
+const sizings = data.sizings.size;
 
-const currentSizing = ref(sizings["--size-1"]);
+const currentSizing = ref(sizings[0].value);
 const exampleRef = ref(null);
 const { width } = useElementSize(
   exampleRef,
@@ -18,8 +19,9 @@ const { width } = useElementSize(
     class="select"
   >
     <option
-      v-for="(sizing, name) in sizings"
-      :value="sizing"
+      v-for="({ value, name }, i) in sizings"
+      :value
+      :key="name"
     >
       {{ name }}
     </option>

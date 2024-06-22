@@ -12,8 +12,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/css": "^0.0.37",
+    "@types/node": "^20.14.8",
     "@types/postcss-import": "^14.0.3",
     "@vueuse/core": "^10.11.0",
+    "css": "^3.0.0",
     "cssnano": "^7.0.2",
     "postcss": "^8.4.38",
     "postcss-cli": "^11.0.0",

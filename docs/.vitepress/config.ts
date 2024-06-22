@@ -1,12 +1,11 @@
 import { defineConfig } from "vitepress";
-import { styles } from "../../src";
+import { propertyNames } from "../getStylesDeclarations";
 
-const paths = Object.keys(styles).map((key) => ({
-  text: key.charAt(0).toUpperCase() + key.slice(1),
-  link: `/${key}`,
+const paths = propertyNames.map((file) => ({
+  text: file.charAt(0).toUpperCase() + file.slice(1),
+  link: `/${file}`,
 }));
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "CSS Utils Kit",
   description: "A VitePress Site",
@@ -25,7 +24,6 @@ export default defineConfig({
     }
   },
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
       { text: "Examples", link: "/getting-started" },

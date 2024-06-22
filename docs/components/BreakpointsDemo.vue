@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import BreakpointInner from "./BreakpointInner.vue";
-import { breakpoints } from "../../src/breakpoints";
 import { useWindowSize, useClipboard } from "@vueuse/core";
+import BreakpointInner from "./BreakpointInner.vue";
+import { data } from "../styles.data";
+const breakpoints = data.breakpoints.breakpoint;
 
 const { width } = useWindowSize();
 const { copy } = useClipboard();
@@ -11,8 +12,8 @@ const { copy } = useClipboard();
   <div class="container">
     <p>Window width: {{ width }}</p>
     <BreakpointInner
-      v-for="(breakpoint, name) in breakpoints"
-      :breakpoint
+      v-for="{value, name} in breakpoints"
+      :breakpoint="value"
       :name
       @click="copy(name)"
     />
