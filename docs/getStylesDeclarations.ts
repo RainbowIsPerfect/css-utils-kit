@@ -4,10 +4,11 @@ import fs from "node:fs";
 
 type KeyFramesNames = Required<Pick<KeyFrames, "name">>[];
 
+const SRC_DIR = "src";
 const IGNORE_LIST = new Set(["index.css", "normalize.css"]);
 
 export const propertyNames = fs
-  .readdirSync("src")
+  .readdirSync(SRC_DIR)
   .filter((v) => !IGNORE_LIST.has(v))
   .map((v) => v.replace(/.css$/, ""));
 
@@ -20,7 +21,7 @@ const isRulesArray = (rules: StyleRules["rules"][number]): rules is Rule => {
 };
 
 export const getStylesDeclarations = (filename: string) => {
-  const file = fs.readFileSync(`src/${filename}.css`, "utf-8");
+  const file = fs.readFileSync(`${SRC_DIR}/${filename}.css`, "utf-8");
   const ast = parse(file).stylesheet;
 
   if (!ast) {
@@ -62,6 +63,8 @@ export const getStylesDeclarations = (filename: string) => {
 
       return array;
     }
+
+    throw new Error(`Unexpected declarations ${filename}.css`);
   } else {
     throw new Error(`Unexpected AST ${filename}.css`);
   }
